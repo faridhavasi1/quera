@@ -1,10 +1,8 @@
-def game(n1: int, n2: int):
-    if n1 and n2 in range(0, 10):
-        pass
+def game(number:str):
+
+    if int(number[0]) > int(number[1]):
+        return int(number[0]) - int(number[1])
     else:
-        if n1 > n2:
-            return n1 - n2
-        else:
-            return n2 - n1
+        return int(number[1]) - int(number[0])
     
-print(game(3,5))    # Output: 2
+print(game('45'))    #outbut 1 ===game('54')
